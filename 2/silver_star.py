@@ -2,7 +2,7 @@
 
 from operator import add, mul
 
-INFILE = "in"
+INFILE = 'in'
 
 
 class Processor():
@@ -17,7 +17,7 @@ class Processor():
         self.instr = self._load_instructions(INFILE)
 
     def _load_instructions(self, path):
-        "Return list of isntructions."
+        'Return list of isntructions.'
         with open(path) as file_in:
             instr = list(map(int, file_in.read().split(',')))
         return instr

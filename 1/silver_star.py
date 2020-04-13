@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-INFILE = "in"
+INFILE = 'in'
 
 def sum_fuel():
     return sum([mass_to_fuel(mass) for mass in get_input(INFILE)])
